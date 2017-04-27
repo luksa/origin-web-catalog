@@ -899,7 +899,10 @@ webpackJsonp([ 0, 1 ], [ function(e, t) {
                 },
                 spec: {
                     serviceClassName: e,
-                    planName: this.ctrl.selectedPlan.name
+                    planName: this.ctrl.selectedPlan.name,
+                    parameters: {
+                        name: this.ctrl.serviceInstanceName
+                    }
                 }
             };
         }, e.prototype.gotoStepID = function(e) {

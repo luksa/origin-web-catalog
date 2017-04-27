@@ -190,7 +190,10 @@ export class OrderServiceController implements angular.IController {
        },
        spec: {
          serviceClassName: serviceClassName,
-         planName: this.ctrl.selectedPlan.name
+         planName: this.ctrl.selectedPlan.name,
+         parameters: {
+           name: this.ctrl.serviceInstanceName
+         }
        }
     };
 
